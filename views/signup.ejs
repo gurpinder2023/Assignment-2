@@ -1,0 +1,31 @@
+<%- include("templates/header") %> 
+<br>
+
+    <form class="form-signin text-center"  action='/submitUser' method='post'>
+  <img class="mb-4" src="/pic1.jpg" alt="" width="72" height="72">
+  <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+  <input name = 'name' type = 'text' placeholder = 'name' class="form-controlmx-auto" class="sr-only" ><br><br>
+  <input name = 'email' type = 'text' placeholder = 'email'class="form-controlmx-auto"  class="sr-only"><br><br>
+        <input name = 'password' type = 'password' placeholder = 'password' class="form-controlmx-auto" class="sr-only"><br><br>
+ 
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+  
+</form>
+
+
+
+
+
+
+
+
+
+
+<!-- Sign up
+    <form action='/submitUser' method='post'>
+        <input name = 'name' type = 'text' placeholder = 'name'><br><br>
+        <input name = 'email' type = 'text' placeholder = 'email'><br><br>
+        <input name = 'password' type = 'password' placeholder = 'password'><br>
+        <button>Submit</button>
+    </form>    -->
+    <%- include("templates/footer") %> 

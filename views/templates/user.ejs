@@ -1,0 +1,37 @@
+<!-- <li> <%= user.name %> (
+    <%= user.user_type %>) </li> -->
+    <li>
+       <h3> <%= user.name %> - <%= user.user_type %></h3>
+        <div class="row">
+          <div class="col-2">
+            <form action="/admin/promote/<%= user._id %>" method="POST" class="form-inline">
+              <button class="btn btn-warning rounded-pill px-3"  type="submit">Promote to admin</button>
+            </form>
+          </div>
+          <div class="col-4">
+            <form action="/admin/demote/<%= user._id %>" method="POST" class="form-inline">
+              <button class="btn btn-danger rounded-pill px-3"  type="submit">Demote to user</button>
+            </form>
+          </div>
+        </div>
+      </li>
+      <br>
+      
+
+
+
+<!-- <li>
+  <%= user.name %> - <%= user.user_type %>
+      <form action="/admin/promote/<%= user._id %>" method="POST" class="form-inline">
+
+        <button class="btn btn-warning rounded-pill px-3"  type="submit" >Promote to admin</button>
+      <button type="submit" class="btn btn-danger">Promote to admin</button>
+      </form>
+     
+
+      <form action="/admin/demote/<%= user._id %>" method="POST" class="form-inline">
+        <button class="btn btn-danger rounded-pill px-3"  type="submit" >Demote to user</button>
+      
+      </form> -->
+
+<!-- </li>  -->
